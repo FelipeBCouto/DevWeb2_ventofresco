@@ -34,7 +34,7 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" v-model="password" required>
 
-            <button @click="PaginaInicial">Entrar</button>
+            <button @click="Confirmar">Entrar</button>
             <button @click="VoltarDash">Voltar</button>
         </form>
     </main>
@@ -44,20 +44,6 @@
             Vento Fresco
         </p>
     </footer>
+    <script src="../js/botoes.js"></script>
 </body>
 </html>
-
-<script>
-    new Vue({
-      el: "main",
-      methods: {
-        PaginaInicial() {
-            alert("Bem-vindo novamente!");
-          window.open("../index.html", "_self");
-        },
-        VoltarDash(){
-            window.open("dashboard.html", "_self")
-        },
-      },
-    });
-  </script>
