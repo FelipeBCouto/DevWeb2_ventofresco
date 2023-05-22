@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/rodape.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__nav">
+            <div class="nav__div__img">
+                <a href="../index.html" target="_self"><img src="../img/logo.png" class="div_img"></a>
+            </div>
+            <div class="nav__div__links">
+                <a href="./adm.html" class="div__link">administrativo</a>
+                <a href="../index.html" class="div__link">catálogo</a>
+                <a href="./dashboard.html" class="div__link">acessar</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="corpo">
+        <form action="" class="corpo__formulario">
+            <h2>Cadastro</h2>
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="nomecompleto" v-model="nomecompleto" required>
+      
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" v-model="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="senha" id="senha" v-model="senha" required>
+            
+            <label for="confirmarsenha">Confirmar Senha:</label>
+            <input type="password" id="confirmarsenha" v-model="confirmarsenha" required>
+            
+            <button @click="PaginaInicial">Cadastrar</button>
+            <button @click="VoltarDash">Voltar</button>
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <p>
+            Vento Fresco
+        </p>
+    </footer>
+</body>
+</html>
+
+<script>
+    new Vue({
+      el: "main",
+      methods: {
+        PaginaInicial() {
+            alert("Cadastro criado com sucesso!");
+          window.open("../index.html", "_self");
+        },
+        VoltarDash(){
+            window.open("dashboard.html", "_self")
+        },
+      },
+    });
+  </script>

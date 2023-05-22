@@ -1,0 +1,47 @@
+:root{
+    --cor-principal: #30757e;
+    --cor-auxiliar: #eeeeee;
+}
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 70px auto;
+    padding: 20px 0;
+    border: 3.5px solid #bdbdbd;
+    border-radius: 20px;
+    width: 400px;
+    background-color: var(--cor-principal);
+    color: var(--cor-auxiliar);
+}
+
+.corpo__formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.corpo__formulario h2{
+    margin: 0 0 5px;
+    font-weight: normal;
+    font-size: 33.5px;
+}
+
+.corpo__formulario label{
+    margin: 12px 0 5.5px;
+    text-align: left;
+}
+
+.corpo__formulario button{
+    margin-top: 13px;
+    background-color: var(--cor-principal);
+    color: var(--cor-auxiliar);
+    border: 2px solid;
+    border-radius: 7px;
+}
+
+.corpo__formulario button:hover{
+    background-color: #1b4950;
+}
+
